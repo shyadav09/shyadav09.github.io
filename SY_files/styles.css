@@ -1,0 +1,422 @@
+:root {
+    --link-base-color: #0018A8;
+    --link-hover-color: #c33149;
+    --paper-coauthor-color: #111451;
+    --paper-status-color: #c33149;
+    --color-fg: #404258;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* You can change the font to your preference */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: var(--color-fg);
+    /* Grey background for the entire page */
+    /* Light grey background */
+    font-size: 14px;
+}
+
+.container {
+    width: 55%;
+    margin: auto;
+    overflow: hidden;
+    /* Clearfix */
+    padding: 15px;
+    /* Added some padding */
+    background: #f4f4f4;
+}
+
+
+/* ---------------------------------------- */
+/*
+/* TOP PANEL
+/*
+/* ---------------------------------------- */
+
+#top-panel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+#headshot {
+    flex: 0 0 250px;
+    /* Increased the width of the headshot container */
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+#headshot img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 350px;
+    /* Increased max height */
+}
+
+#bio {
+    flex: 1;
+    /* Takes the remaining space */
+    padding-right: 20px;
+    text-align: left;
+    /* Align text to the left */
+}
+
+#bio h1 {
+    margin: 0;
+    color: var(--color-fg);
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+#bio #position,
+#bio #affiliation,
+#bio #email {
+    margin: 0;
+    /* Removes margin to make them appear as a block */
+    padding: 0;
+    /* Removes padding to make them appear as a block */
+}
+
+
+#bio #email {
+    /* font-weight: bold; */
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* CV */
+#cv-link {
+    text-decoration: none;
+    color: var(--link-hover-color);
+    font-weight: 600;
+    border-bottom: 1px dashed #ccc;
+}
+
+#cv-link:hover {
+    color: var(--link-hover-color);
+    border-bottom: 1px dashed var(--link-hover-color);
+
+}
+
+
+/* italic */
+#pronunciation {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.85em;
+    color: var(--color-fg);
+
+}
+
+#link-to-lager {
+
+    text-decoration: none;
+    color: var(--color-fg);
+    border-bottom: 1px dashed #ccc;
+}
+
+#link-to-lager:hover {
+
+    border-bottom: 1px dashed var(--color-fg);
+}
+
+/* ---------------------------------------- */
+/*
+/* BOTTOM PANEL
+/*
+/* ---------------------------------------- */
+
+#research {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+}
+
+#research-papers-section h3 {
+    color: var(--color-fg);
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background-color: #ccc;
+    /* Grey color for the divider line */
+    margin-top: 2px;
+    /* Reduced top margin to move closer to the section header */
+    margin-bottom: 20px;
+    /* Space below the divider */
+}
+
+#research ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    /* Increase bottom margin to add space before the next section */
+}
+
+#paper-title {
+    /* font-weight: bold; */
+    font-weight: 600;
+    /* Make the paper title bold */
+    margin: 0;
+    /* Remove default margin to reduce vertical space */
+}
+
+#coauthors,
+#abstract-status,
+#paper-status {
+    font-size: 0.9em;
+}
+
+#coauthors,
+#paper-status {
+    margin: 0;
+    /* Remove default margin to reduce vertical space */
+}
+
+#paper-status {
+    font-style: italic;
+    /* Make the status italic */
+    color: var(--paper-status-color);
+    /* Change the color of the status to pink */
+}
+
+#abstract-status {
+    font-size: 0.9em;
+}
+
+#abstract-status {
+    margin: 0;
+    /* Remove default margin to reduce vertical space */
+}
+
+#abstract-status {
+    font-style: italic;
+    /* Make the status italic */
+    color: #404258;
+    /* Change the color of the status to pink */
+}
+
+
+/* This targets the last <li> in the 'Working Papers' section to add more space */
+#research-papers-section ul li:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    /* Adjust as needed for visual spacing */
+}
+
+/* This targets the first <h3> in the 'Works in Progress' section to add space above */
+#research-papers-section h3:first-child {
+    margin-top: 30px;
+    /* Adjust as needed for visual spacing */
+}
+
+
+#research li {
+    margin-bottom: 20px;
+}
+
+#coauthor-link {
+    text-decoration: none;
+    color: var(--color-fg);
+    border-bottom: 1px dashed #ccc;
+}
+
+#coauthor-link:hover {
+    border-bottom: 1px dashed var(--color-fg);
+}
+
+#linked-paper {
+    text-decoration: none;
+    /* Removes the default underline from links */
+    /* color: var(--link-base-color);
+     */
+    color: var(--color-fg);
+
+    /* Default dark gray color for text */
+    border-bottom: 0.8px dashed #000;
+    /* Faint dashed underline */
+    padding-bottom: 0px;
+
+}
+
+#linked-paper:hover {
+    color: var(--link-hover-color);
+    /* border-bottom: 1px dashed #780000; */
+}
+
+
+/* ---------------------------------------- */
+/*
+/* GPT
+/*
+/* ---------------------------------------- */
+.paper-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  /* Add separators between all direct children, except the first one */
+  .paper-info > *:not(:first-child)::before {
+    content: "|";
+    margin: 0 8px;
+    color: #aaa;
+  }
+  
+  .paper-abstract summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .paper-links a,
+  .paper-media a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+.paper-media a:hover {
+    text-decoration: underline;
+  }
+  
+.paper-links a:hover {
+    text-decoration: none;
+  }
+   
+/* Only underline "Abstract" in summary on hover */
+.paper-media summary a:hover {
+    text-decoration: underline;
+}
+
+/* Different hover effect for .paper-links */
+.paper-links a:hover {
+    color: #0066cc;
+    text-decoration: none;
+    /* or text-decoration: underline; */
+}
+
+
+/* ---------------------------------------- */
+/*
+/* FOOTER
+/*
+/* ---------------------------------------- */
+
+/* Footer Styles */
+/* footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--color-fg);
+    font-size: 0.8em;
+} */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--color-fg);
+    font-size: 0.6em;
+    border-top: 1px solid lightgrey;
+    color: #a6a2a0;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 40px;
+    width: 40%;
+    margin: auto;
+}
+
+
+
+footer p {
+    margin: 5px 0;
+    /* Spacing between footer elements */
+}
+
+
+/* ---------------------------------------- */
+/*
+/* MEDIA QUERIES
+/*
+/* ---------------------------------------- */
+
+/* Media Query for Medium Width Screens (like iPads) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 85%;
+        /* Adjust the width for medium screens */
+    }
+
+    #headshot,
+    #bio {
+        padding: 10px;
+        /* Slight padding for medium screens */
+    }
+
+    #headshot img {
+        max-height: 500px;
+        /* Adjust max height for medium screens */
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    #top-panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #headshot {
+        max-width: 300px;
+        /* Restricts the width */
+        margin-bottom: 20px;
+        /* Adds space below the headshot */
+        padding-left: 0px;
+    }
+
+    #headshot img {
+        height: auto;
+        max-height: 500px;
+
+    }
+
+    #bio {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    #research {
+        padding: 0;
+        /* This removes padding to align with the bio section */
+    }
+
+    #working-papers,
+    #works-in-progress {
+        padding: 0;
+        /* Removes padding */
+    }
+
+
+
+
+}
